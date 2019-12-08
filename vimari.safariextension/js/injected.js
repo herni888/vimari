@@ -82,7 +82,7 @@ var actionMap = {
 		function() { window.scrollBy(0, document.body.scrollHeight); },
 
 	'goToPageTop':
-		function() { window.scrollBy(0, -document.body.scrollHeight); }
+		function() window.scroll({ top: 0, left: 0, behavior: 'smooth' });; }
 };
 
 // Meant to be overridden, but still has to be copy/pasted from the original...
